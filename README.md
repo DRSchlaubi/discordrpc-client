@@ -1,0 +1,1 @@
+discordrpc-client
