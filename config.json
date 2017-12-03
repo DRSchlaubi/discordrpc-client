@@ -1,0 +1,14 @@
+{
+	"appClientID": "386841318372147202",
+	"imageKeys": {
+		"large": "schlaubi-large",
+		"small": "discord-small"
+	},
+	"imageTexts": {
+		"large": "Website: https://schlaubi.me",
+		"small": "Discord: http://d.schlb.me Join Now!"
+	},
+	"details": "German Java developer!",
+	"state": "Running me.schlaubi.Life.main()",
+	"rpcTransportType": "ipc"
+}

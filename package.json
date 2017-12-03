@@ -1,0 +1,21 @@
+{
+  "name": "discordrpc-client",
+  "version": "0.0.3",
+  "description": "Paste own information into Disocrd's Rich Presence",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DRSchlaubi/discordrpc-client.git"
+  },
+  "author": "Schlaubi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DRSchlaubi/discordrpc-client/issues"
+  },
+  "homepage": "https://github.com/DRSchlaubi/discordrpc-clientreadme",
+  "dependencies": {
+    "discord-rpc": "git+https://github.com/DRSchlaubi/discord-rpc",
+    "fancy-log": "^1.3.0",
+    "package.json": "^2.0.1"
+  }
+}
