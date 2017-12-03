@@ -3,26 +3,31 @@ const {Client} = require('discord-rpc'),
   config = require('./config.json');
 
 const rpc = new Client({ transport: config.rpcTransportType}),
+  //Read config
   app = config.appClientID,
-  largeImage = config.imageKeys.large,
-  smallImage = config.imageKeys.small;
+  largeImageKey = config.imageKeys.large,
+  smallImageKey = config.imageKeys.small,
+  largeImageText = config.imageTexts.large,
+  smallImageText = config.imageTexts.small,
+  details = config.details,
+  state = config.state;
 
+  //Request Rich Presence
   rpc.on('ready', () =>{
     log('Connected to Discord! Client id:' + app)
     let startTimestamp = undefined,
-    endTimestamp = undefined
+    endTimestamp = startTimestamp
     rpc.setActivity({
-      details: config.details,
-      state: config.state,
-      startTimestamp,
-      endTimestamp,
-      largeImage,
-      smallImage,
-      largeImageText: config.imageTexts.large,
-      smallImageText: config.imageTexts.small,
-      instance: false,
-
-    });
+    details,
+    state,
+    startTimestamp,
+    endTimestamp,
+    largeImageKey,
+    smallImageKey,
+    largeImageText,
+    smallImageText,
+    instance: false,
+});
   });
 
   rpc.login(app).catch(log.error);
